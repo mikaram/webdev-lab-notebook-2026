@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,8 +8,60 @@
   </head>
   <body>
     <main>
+      <h1>Form</h1>
       <form action="/submit">
         <!-- Add your code here -->
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Full Name" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@pdx.edu"
+          />
+        </div>
+      </br>
+        <fieldset>
+          <legend>Favorite Character:</legend>
+          <div>
+            <input
+              type="radio"
+              id="Spongebob"
+              name="Character"
+              value="Spongebob"
+            />
+            <label for="Spongebob">Spongebob</label>
+          </div>
+          <div>
+            <input type="radio" id="Sandy" name="Character" value="Sandy" />
+            <label for="Sandy">Sandy</label>
+          </div>
+          <div>
+            <input type="radio" id="Patrick" name="Character" value="Patrick" />
+            <label for="Patrick">Patrick</label>
+          </div>
+        </fieldset>
+      </br>
+        <fieldset>
+          <legend>Are you a fan of the show?</legend>
+          <div>
+            <input type="checkbox" id="watch" name="like" value="watch" />
+            <label for="watch">Yes, I have watched all episodes!</label>
+          </div>
+          <div>
+            <input type="checkbox" id="meme" name="like" value="meme" />
+            <label for="meme">Yes, it's got the best memes.</label>
+          </div>
+        </fieldset>
+      </br>
+      <div>
+        <input type="submit" value="Submit"/>
+        <input type="reset" value="Reset"/>
+      </div>
       </form>
     </main>
   </body>
